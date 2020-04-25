@@ -11,7 +11,7 @@ int c, d, swap;
 for (c = 0 ; c < size - 1; c++)
     for (d = 0 ; d < size - c - 1; d++)
 
-      if (a[d] > a[d+1]) /* For decreasing order use < */
+      if (a[d] > a[d+1]) 
       {
         swap       = a[d];
         a[d]   = a[d+1];
@@ -39,11 +39,6 @@ int main()
    t=(end-start)/CLOCKS_PER_SEC;
 
    printf("time taken is %g seconds.\n",t/iters);
-
- // printf("Sorted list in ascending order:\n");
-
-  //for (c = 0; c < n; c++)
-    // printf("%d\n", array[c]);
 
   return 0;
 }
